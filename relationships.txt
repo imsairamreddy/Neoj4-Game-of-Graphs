@@ -1,0 +1,384 @@
+
+
+HOUSES
+
+
+	CREATE (:House {name:"Baratheon"});
+	CREATE (:House {name:"Tyrell"});
+	CREATE (:House {name:"Lannister"});
+	CREATE (:House {name:"Greyjoy"});
+	CREATE (:House {name:"Starks"});
+	CREATE (:House {name:"Targaryen"});
+
+
+PEOPLE
+	HOUSE OF BARATHEONS
+
+	CREATE (:Person {name:"Robert Baratheon"});//1
+
+        CREATE (:Person {name:"Cersei Lannister"});//SPOUSE
+	CREATE (:Person {name:"Tommen Baratheon"});//CHILD
+	CREATE (:Person {name:"Myrcella Baratheon"});//CHILD
+	CREATE (:Person {name:"Joffrey Baratheon"});//CHILD                  	
+	CREATE (:Person {name:"Stannis Baratheon"});//SIBLING
+	CREATE (:Person {name:"Steffon Baratheon"});//FATHER
+
+	
+	CREATE (:Person {name:"Joffrey Baratheon"});//2
+
+	
+	CREATE (:Person {name:"Robert Baratheon"});//FATHER
+	CREATE (:Person {name:"Cersei Lannister"});//MOTHER
+	CREATE (:Person {name:"Tommen Baratheon"});//SIBLING
+	CREATE (:Person {name:"Myrcella Baratheon"});//SIBLING 
+
+	
+	CREATE (:Person {name:"Tommen Baratheon"});//3
+
+	CREATE (:Person {name:"Robert Baratheon"});//FATHER
+	CREATE (:Person {name:"Cersei Lannister"});//MOTHER
+	CREATE (:Person {name:"Myrcella Baratheon"});//SIBLING
+	CREATE (:Person {name:"Joffrey Baratheon"});//SIBLING                 	
+
+        
+	CREATE (:Person {name:"Myrcella Baratheon"});//4
+
+	
+	CREATE (:Person {name:"Robert Baratheon"});//FATHER
+	CREATE (:Person {name:"Cersei Lannister"});//MOTHER
+	CREATE (:Person {name:"Joffrey Baratheon"});//SIBLING 
+	CREATE (:Person {name:"Tommen Baratheon"});//SIBLING 
+	
+	CREATE (:Person {name:"Stannis Baratheon"});//5
+
+	CREAT (:Person {name:”Shireen Baratheon”});//CHILD
+	CREATE (:Person {name:"Robert Baratheon"});//SIBLING
+
+	CREAT (:Person {name:”Shireen Baratheon”});//6
+	CREATE (:Person {name:"Stannis Baratheon"});father
+	
+
+	HOUSE TYRELLS
+
+	CREATE (:Person {name:"Mace Tyrell"});
+	CREATE (:Person {name:"Margaery Tyrell"});
+	CREATE (:Person {name:"Loras Tyrell"});
+
+	
+	CREATE (:Person {name:"Mace Tyrell"});//1
+
+	CREATE (:Person {name:"Margaery Tyrell"});//CHILD
+	CREATE (:Person {name:"Loras Tyrell"});//CHILD
+
+	
+	
+	CREATE (:Person {name:"Margaery Tyrell"});//2
+
+	
+	CREATE (:Person {name:"Mace Tyrell"});//FATHER
+	CREATE (:Person {name:"Loras Tyrell"});//SIBLING
+
+	CREATE (:Person {name:"Loras Tyrell"});//3
+
+	
+	CREATE (:Person {name:"Mace Tyrell"});//father
+	CREATE (:Person {name:"Margaery Tyrell"});//child
+	
+	HOUSE OF LANNISTERS
+
+	CREATE (:Person {name:"Cersei Lannister"});//1
+
+	CREATE (:Person {name:"Robert Baratheon"});spouse
+	CREATE (:Person {name:"Tommen Baratheon"});//CHILD
+	CREATE (:Person {name:"Myrcella Baratheon"});//CHILD
+	CREATE (:Person {name:"Joffrey Baratheon"});//CHILD  
+	CREATE (:Person {name:"Jaime Lannister"});//sibling
+	CREATE (:Person {name:"Tyrion Lannister"});//sibling
+	CREATE (:Person {name:"Tywin Lannister"});//father
+	CREATE (:Person {name:"Lancel Lannister"});//sibling
+	CREATE (:Person {name:"Willem Lannister"});//sibling
+	CREATE (:Person {name:"Martyn Lannister"});//sibling
+	CREATE (:Person {name:"Tytos Lannister"});//grand father
+	
+	
+	CREATE (:Person {name:"Jaime Lannister"});//2
+
+	CREATE (:Person {name:"Cersei Lannister"});//sibling
+	CREATE (:Person {name:"Tyrion Lannister"});//sibling
+	CREATE (:Person {name:"Tywin Lannister"});//father
+	CREATE (:Person {name:"Lancel Lannister"});//sibling
+	CREATE (:Person {name:"Willem Lannister"});//sibling
+	CREATE (:Person {name:"Martyn Lannister"});//sibling
+	CREATE (:Person {name:"Tytos Lannister"});//grand father
+	
+	
+	CREATE (:Person {name:"Tyrion Lannister"]);//3
+
+	CREATE (:Person {name:"Cersei Lannister"});//sibling
+	CREATE (:Person {name:"Jaime Lannister"});//sibling
+	CREATE (:Person {name:"Tywin Lannister"});//father
+	CREATE (:Person {name:"Lancel Lannister"});//sibling
+	CREATE (:Person {name:"Willem Lannister"});//sibling
+	CREATE (:Person {name:"Martyn Lannister"});//sibling
+	CREATE (:Person {name:"Tytos Lannister"});//grand father
+	
+
+	CREATE (:Person {name:"Tywin Lannister"});//4
+	
+	CREATE (:Person {name:"Cersei Lannister"});//1
+	CREATE (:Person {name:"Jaime Lannister"});//child
+	CREATE (:Person {name:"Tyrion Lannister"});//child
+	CREATE (:Person {name:"Tywin Lannister"});//child
+	CREATE (:Person {name:"Tytos Lannister"});//father
+	
+
+	CREATE (:Person {name:"Tytos Lannister"});//5
+
+	
+	CREATE (:Person {name:"Jaime Lannister"});//grand child
+	CREATE (:Person {name:"Cersei Lannister"});//grand child
+	CREATE (:Person {name:"Tyrion Lannister"});//grand child
+	CREATE (:Person {name:"Tywin Lannister"});//child
+	
+       
+	HOUSE OF GREYJOYS
+	
+	CREATE (:Person {name:"Balon Greyjoy"});//1
+
+	CREATE (:Person {name:"Euron Greyjoy"});//sibling
+	CREATE (:Person {name:"Alannys Greyjoy"});//spouse
+	CREATE (:Person {name:"Rodrik Greyjoy"});//child
+	CREATE (:Person {name:"Maron Greyjoy"});//child
+	CREATE (:Person {name:"Yara Greyjoy"});//child
+	CREATE (:Person {name:"Theon Greyjoy"});//child
+	CREATE (:Person {name:"Aeron Greyjoy"});//sibling
+
+	
+	CREATE (:Person {name:"Euron Greyjoy"});//2
+
+	CREATE (:Person {name:"Balon Greyjoy"});//sibling
+	CREATE (:Person {name:"Aeron Greyjoy"});//sibling
+
+	CREATE (:Person {name:"Alannys Greyjoy"})//3
+
+	CREATE (:Person {name:"Balon Greyjoy"});//spouse
+	CREATE (:Person {name:"Rodrik Greyjoy"});//child
+	CREATE (:Person {name:"Maron Greyjoy"});//child
+	CREATE (:Person {name:"Yara Greyjoy"});//child
+	CREATE (:Person {name:"Theon Greyjoy"});//child
+
+	CREATE (:Person {name:"Rodrik Greyjoy"});//4
+
+	CREATE (:Person {name:"Balon Greyjoy"});//father
+	CREATE (:Person {name:"Alannys Greyjoy"});//mother
+	CREATE (:Person {name:"Maron Greyjoy"});//sibling
+	CREATE (:Person {name:"Yara Greyjoy"});//sibling
+	CREATE (:Person {name:"Theon Greyjoy"});//sibling
+	
+	
+	CREATE (:Person {name:"Maron Greyjoy"});//5
+
+	CREATE (:Person {name:"Balon Greyjoy"});//father
+	CREATE (:Person {name:"Alannys Greyjoy"});//mother
+	CREATE (:Person {name:"Rodrick Greyjoy"});//sibling
+	CREATE (:Person {name:"Yara Greyjoy"});//sibling
+	CREATE (:Person {name:"Theon Greyjoy"});//sibling
+
+	CREATE (:Person {name:"Yara Greyjoy"});//6
+
+	CREATE (:Person {name:"Balon Greyjoy"});//father
+	CREATE (:Person {name:"Alannys Greyjoy"});//mother
+	CREATE (:Person {name:"Rodrick Greyjoy"});//sibling
+	CREATE (:Person {name:"Maron Greyjoy"});//sibling
+	CREATE (:Person {name:"Theon Greyjoy"});//sibling
+
+	
+	CREATE (:Person {name:"Theon Greyjoy"});//7
+
+	
+	CREATE (:Person {name:"Balon Greyjoy"});//father
+	CREATE (:Person {name:"Alannys Greyjoy"});//mother
+	CREATE (:Person {name:"Rodrick Greyjoy"});//sibling
+	CREATE (:Person {name:"Maron Greyjoy"});//sibling
+	CREATE (:Person {name:"Yara Greyjoy"});//sibling
+	
+	
+	HOUSE OF STARKS	
+
+	CREATE (:Person {name:"Eddard Stark"});//1
+
+	CREATE (:Person {name:"Catelyn Stark"});//spouse
+	CREATE (:Person {name:"Sansa Stark"});//child
+	CREATE (:Person {name:"Arya Stark"});//child
+	CREATE (:Person {name:"Bran Stark"});//child
+	CREATE (:Person {name:"Robb Stark"});//child
+        CREATE (:Person {name:"Rickon Stark"});//child
+	CREATE (:Person {name:"Benjen Stark"});//sibling
+	CREATE (:Person {name:"Lyanna Stark"});//sibling
+
+	CREATE (:Person {name:"Catelyn Stark"});//2
+
+	CREATE (:Person {name:"Eddard Stark"});//spouse
+	CREATE (:Person {name:"Sansa Stark"});//child
+	CREATE (:Person {name:"Arya Stark"});//child
+	CREATE (:Person {name:"Bran Stark"});//child
+	CREATE (:Person {name:"Robb Stark"});//child
+        CREATE (:Person {name:"Rickon Stark"});//child
+
+	CREATE (:Person {name:"Sansa Stark"});//3
+
+	
+	CREATE (:Person {name:"Eddard Stark"});//father
+`	CREATE (:Person {name:"Catelyn Stark"});//mother
+	CREATE (:Person {name:"Arya Stark"});///sibling
+	CREATE (:Person {name:"Bran Stark"});///sibling
+	CREATE (:Person {name:"Robb Stark"});///sibling
+        CREATE (:Person {name:"Rickon Stark"});///sibling
+	
+	CREATE (:Person {name:"Arya Stark"});//4
+
+	CREATE (:Person {name:"Eddard Stark"});//father
+`	CREATE (:Person {name:"Catelyn Stark"});//mother
+	CREATE (:Person {name:"Sansa Stark"});///sibling
+	CREATE (:Person {name:"Bran Stark"});///sibling
+	CREATE (:Person {name:"Robb Stark"});///sibling
+        CREATE (:Person {name:"Rickon Stark"});///sibling
+
+	CREATE (:Person {name:"Bran Stark"});//5
+
+	
+	CREATE (:Person {name:"Eddard Stark"});//father
+`	CREATE (:Person {name:"Catelyn Stark"});//mother
+	CREATE (:Person {name:"Sansa Stark"});///sibling
+	CREATE (:Person {name:"Arya Stark"});///sibling
+	CREATE (:Person {name:"Robb Stark"});///sibling
+        CREATE (:Person {name:"Rickon Stark"});///sibling
+
+	CREATE (:Person {name:"Robb Stark"});//6
+	
+	CREATE (:Person {name:"Eddard Stark"});//father
+`	CREATE (:Person {name:"Catelyn Stark"});//mother
+	CREATE (:Person {name:"Sansa Stark"});///sibling
+	CREATE (:Person {name:"Arya Stark"});///sibling
+	CREATE (:Person {name:"Bran Stark"});///sibling
+        CREATE (:Person {name:"Rickon Stark"});///sibling
+
+	CREATE (:Person {name:"Rickon Stark"});//7
+
+	CREATE (:Person {name:"Eddard Stark"});//father
+`	CREATE (:Person {name:"Catelyn Stark"});//mother
+	CREATE (:Person {name:"Sansa Stark"});///sibling
+	CREATE (:Person {name:"Arya Stark"});///sibling
+	CREATE (:Person {name:"Bran Stark"});///sibling
+        CREATE (:Person {name:"Robb Stark"});///sibling
+
+
+	CREATE (:Person {name:"Benjen Stark"});//8
+
+	
+	CREATE (:Person {name:"Eddard Stark"});//sibling
+	CREATE (:Person {name:"Lyanna Stark"});//sibling
+
+	
+	CREATE (:Person {name:"Lyanna Stark"});//9
+
+	CREATE (:Person {name:"Rhaegar Targaryen"});//spouse
+	CREATE (:Person {name:"Eddard Stark"});//sibling
+	CREATE (:Person {name:"Benjen Stark"});//sibling
+
+	HOUSE OF TARGARYEN
+
+	CREATE (:Person {name:"Aerys Targaryen"});//1
+
+	
+	CREATE (:Person {name:"Rhaella Targaryen"});//spouse
+	CREATE (:Person {name:"Viseyrs Targaryen"});//child
+	CREATE (:Person {name:"Daenerys Targaryen"});//child
+	CREATE (:Person {name:"Rhaegar Targaryen"});//child
+
+	CREATE (:Person {name:"Rhaella Targaryen"});//2
+
+	CREATE (:Person {name:"Aerys Targaryen"});//spouse
+	CREATE (:Person {name:"Viseyrs Targaryen"});//child
+	CREATE (:Person {name:"Daenerys Targaryen"});//child
+	CREATE (:Person {name:"Rhaegar Targaryen"});//child
+	
+	CREATE (:Person {name:"Viseyrs Targaryen"});//3
+
+	CREATE (:Person {name:"Aerys Targaryen"});//father
+	CREATE (:Person {name:"Rhaella Targaryen"});//mother
+	CREATE (:Person {name:"Daenerys Targaryen"});//sibling
+	CREATE (:Person {name:"Rhaegar Targaryen"});//sibling
+
+	CREATE (:Person {name:"Daenerys Targaryen"});//4
+
+	
+	CREATE (:Person {name:"Aerys Targaryen"});//father
+	CREATE (:Person {name:"Rhaella Targaryen"});//mother
+	CREATE (:Person {name:"Viserys Targaryen"});//sibling
+	CREATE (:Person {name:"Rhaegar Targaryen"});//sibling
+
+	CREATE (:Person {name:"Rhaegar Targaryen"});//5
+
+	CREATE (:Person {name:"Aerys Targaryen"});//father
+	CREATE (:Person {name:"Rhaella Targaryen"});//mother
+	CREATE (:Person {name:"Lyanna Stark"});//spouse
+	CREATE (:Person {name:"Viserys Targaryen"});//sibling
+	CREATE (:Person {name:"Daenerys Targaryen"});//sibling
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+
