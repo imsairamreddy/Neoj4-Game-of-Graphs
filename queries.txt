@@ -1,0 +1,49 @@
+
+from py2neo import Graph
+graph = Graph("bolt://127.0.0.1:7687", auth=("neo4j", "hello"))
+graph.run("MATCH(n )DETACH DELETE n");
+from py2neo import Graph
+graph = Graph("bolt://127.0.0.1:7687", auth=("neo4j", "hello"))
+graph.run("MERGE (:HOUSE{NAME:\"STARKS\"})");
+output = graph.run("MATCH (a) RETURN a").to_table()
+print output
+from py2neo import Graph
+graph = Graph("bolt://127.0.0.1:7687", auth=("neo4j", "hello"))
+graph.run("CREATE (STARKS:PERSON{name:\"Rickard Stark\"})") ;
+output = graph.run("MATCH (n) RETURN n").to_table()
+print output
+from py2neo import Graph
+graph = Graph("bolt://127.0.0.1:7687", auth=("neo4j", "hello"))
+graph.run("CREATE (STARKS:PERSON{name:\"Someone Stark\"})") ;
+output = graph.run("MATCH (n) RETURN n").to_table()
+print output
+from py2neo import Graph
+graph = Graph("bolt://127.0.0.1:7687", auth=("neo4j", "hello"))
+graph.run("MATCH (a:PERSON), (b:PERSON) WHERE a.name = \"Rickard Stark\" AND b.name = \"Someone Stark\" CREATE (a)-[r: SPOUSE_OF]->(b)") ;
+output = graph.run("MATCH (SPOUSE_OF) RETURN SPOUSE_OF").to_table()
+print output
+from py2neo import Graph
+graph = Graph("bolt://127.0.0.1:7687", auth=("neo4j", "hello"))
+graph.run("CREATE (STARKS:PERSON{name:\"Brandon Stark\"})") ;
+from py2neo import Graph
+graph = Graph("bolt://127.0.0.1:7687", auth=("neo4j", "hello"))
+graph.run("MATCH (a:PERSON), (b:PERSON) WHERE a.name = \"Rickard Stark\" AND b.name = \"Brandon Stark\" CREATE (a)-[r: FATHER_OF]->(b)")
+output = graph.run("MATCH (FATHER_OF) RETURN FATHER_OF").to_table()
+print output
+from py2neo import Graph
+graph = Graph("bolt://127.0.0.1:7687", auth=("neo4j", "hello"))
+graph.run("CREATE (STARKS:PERSON{name:\"Eddard Stark\"})") ;
+print output
+from py2neo import Graph
+graph = Graph("bolt://127.0.0.1:7687", auth=("neo4j", "hello"))
+graph.run("MATCH (a:PERSON), (b:PERSON) WHERE a.name = \"Rickard Stark\" AND b.name = \"Eddard Stark\" CREATE (a)-[r: FATHER_OF]->(b)")
+output = graph.run("MATCH (FATHER_OF) RETURN FATHER_OF").to_table()
+print output
+from py2neo import Graph
+graph = Graph("bolt://127.0.0.1:7687", auth=("neo4j", "hello"))
+graph.run("CREATE (mace:TYRELL {name:\"MACE TYRELL\" })") ;
+print output
+from py2neo import Graph
+graph = Graph("bolt://127.0.0.1:7687", auth=("neo4j", "hello"))
+graph.run("CREATE (loras:TYRELL {name:\"LORAS TYRELL\" })") ;
+print output
