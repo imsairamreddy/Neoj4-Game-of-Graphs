@@ -1,0 +1,59 @@
+TYRELLS:
+
+Mace Tyrell,Alerie Tyrell
+Margaery Tyrell,Loras Tyrell
+
+Margaery Tyrell,Tommen Baratheon
+
+
+
+LANNISTERS:
+
+Tytos Lannister
+Tywin Lannister,Kevan Lannsiter
+
+Tywin Lannister,Joanna Lannister
+Cersei Lannister,Jaime Lannister,Tyrion Lannister
+
+Cersei Lannister,Robert Baratheon
+Joffrey Baratheon,Tommen Baratheon,Myrcella Baratheon
+
+Kevan Lannsiter,Dorna Lannister
+Lancel Lannister,Willem Lannister,Martyn Lannister
+
+
+
+GREYJOYS:
+Aeson Greyjoy
+Balon Greyjoy,Euron Greyjoy,Aeron Greyjoy
+
+Balon Greyjoy,Alannys Greyjoy
+Rodrik Greyjoy,Maron Greyjoy,Yara Greyjoy,Theon Greyjoy
+
+
+STARKS:
+Rickard Stark
+Brandon Stark,Eddard Stark,Benjen Stark,Lyanna Stark
+
+Eddard Stark,Catelyn Stark
+Robb Stark,Sansa Stark,Bran Stark,Arya Stark,Rickon Stark
+
+Lyanna Stark,Rhaegar Targaryen
+Jon Snow
+
+Sansa Stark,Joffrey Baratheon
+
+
+TARGARYEN:
+Aegon Targaryen
+Duncen Targaryen,Aerys Targaryen,Daeron Targaryen
+
+Aerys Targaryen,Rhaella Targaryen
+Viseyrs Targaryen,Daenerys Targaryen,Rhaegar Targaryen
+
+Daenerys Targaryen,Khal Drogo
+
+Rhaegar Targaryen,Lyanna Stark
+Jon Snow
+
+
